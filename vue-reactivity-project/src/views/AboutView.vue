@@ -8,7 +8,7 @@
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
-    display: flex;
+    isplay: flex;
     align-items: center;
   }
 }
