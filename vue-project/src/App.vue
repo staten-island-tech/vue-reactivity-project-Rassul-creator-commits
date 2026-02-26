@@ -4,6 +4,9 @@
       <div v-for="country in northAmericanCountries" :key="country.name">
         {{ country.name }}
       </div>
+      <div>
+        <a href="@"></a>
+      </div>
     </div>
   </div>
   <h1></h1>
