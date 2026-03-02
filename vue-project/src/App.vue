@@ -1,15 +1,14 @@
 <template>
   <div>
+    <div>
+      <img src="/americas.jpg" alt="Americas" />
+    </div>
     <div class="container">
       <div v-for="country in northAmericanCountries" :key="country.name">
-        {{ country.name }}
-      </div>
-      <div>
-        <a href="@"></a>
+        {{<button>country.name</button> }}
       </div>
     </div>
   </div>
-  <h1></h1>
   <p>
     <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
     documentation
