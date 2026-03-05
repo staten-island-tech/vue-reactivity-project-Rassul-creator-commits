@@ -4,12 +4,21 @@
       <img src="/americas.jpg" alt="Americas" />
     </div>
     <div class="container">
-      <div v-for="country in northAmericanCountries" :key="country.name">
-        {{ country.name }}
-        <button @click=">
-            
-        </button>
-      </div>
+      <button
+        class="northAmericanCountries"
+        v-for="northCountry in northAmericanCountries"
+        :key="northCountry.name"
+      >
+        {{ southCountry.name }}
+      </button>
+
+      <button
+        class="SouthAmericanCountries"
+        v-for="southCountry in northAmericanCountries"
+        :key="southCountry.name"
+      >
+        {{ southCountry.name }}
+      </button>
     </div>
   </div>
   <p>
