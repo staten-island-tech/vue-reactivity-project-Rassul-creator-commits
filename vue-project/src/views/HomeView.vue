@@ -9,12 +9,12 @@
         v-for="northCountry in northAmericanCountries"
         :key="northCountry.name"
       >
-        {{ southCountry.name }}
+        {{ northCountry.name }}
       </button>
 
       <button
         class="SouthAmericanCountries"
-        v-for="southCountry in northAmericanCountries"
+        v-for="southCountry in southAmericanCountries"
         :key="southCountry.name"
       >
         {{ southCountry.name }}
