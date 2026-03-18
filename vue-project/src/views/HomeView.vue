@@ -1,33 +1,22 @@
 <template>
+   <ButtonCard
+    :northCountries="northAmericanCountries"
+    :southCountries="southAmericanCountries"
+    
+    />
   <div>
     <div>
       <img src="/americas.jpg" alt="Americas" />
-    </div>
-    <div class="container">
-      <button
-        class="northAmericanCountries"
-        v-for="northCountry in northAmericanCountries"
-        :key="northCountry.name"
-      >
-        {{ northCountry.name }}
-      </button>
-
-      <button
-        class="SouthAmericanCountries"
-        v-for="southCountry in southAmericanCountries"
-        :key="southCountry.name"
-      >
-        {{ southCountry.name }}
-      </button>
+    
+      
     </div>
   </div>
-  <p>
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+
 </template>
 <script setup>
-const northAmericanCountries = [
+  import ButtonCard from './components/ButtonCard.vue'
+
+  const northAmericanCountries = [
   {
     name: 'United States',
     population: 342000000,
@@ -280,4 +269,7 @@ const southAmericanCountries = [
   },
 ]
 </script>
-<style scoped></style>
+
+<style scoped>
+
+</style>
