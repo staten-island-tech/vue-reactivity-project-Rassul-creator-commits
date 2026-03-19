@@ -14,8 +14,7 @@
 
 </template>
 <script setup>
-  import ButtonCard from './components/ButtonCard.vue'
-
+  import ButtonCard from '../components/ButtonCard.vue'
   const northAmericanCountries = [
   {
     name: 'United States',
